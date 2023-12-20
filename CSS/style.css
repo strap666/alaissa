@@ -1,0 +1,160 @@
+:root
+{
+  --primarycolor: #a01f0e;
+  --secondarycolor: rgb(255, 6, 6);
+  --lightcolor: #00942f;
+  --bgcolor-1: rgb(0, 0, 0);
+  --bgcolor-2: rgb(225, 236, 61);
+    --bgcolor-3: rgb(100,100,100);
+  --padding: 8%;
+
+}
+html{
+  font-family:"johny sence";
+  font-size: 16px;
+  color: var(--lightcolor);
+}
+.home{
+  background-image: url(mm/f.jpg);
+background-size:40%;
+background-repeat: no-repeat;
+ background-position-x: center; 
+  width:100%;
+  height: 100vh;
+  background-color:var(--bgcolor-1);
+  display: flex;
+  flex-direction: column;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2{
+  font-size: 2.2rem;
+  letter-spacing: 0.12rem;
+  cursor: pointer;
+}
+nav{
+  padding-top: 2.8rem;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+span{
+  color: var(--primarycolor);
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0.8rem 1.5rem;
+}
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.4s;
+}
+nav ul li a:hover{
+  color: var(--primarycolor);
+}
+.btn{
+
+  background-color: var(--primarycolor);
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid transparent;
+  padding: 0.81rem 1.81rem;
+  border-radius: 30px;
+color:rgb(43, 224, 43);
+}
+.btn:hover{
+
+  background-color: transparent;
+  border: 2px solid var(--primarycolor);
+  transition: 0.7s;
+}
+.content{
+
+ flex-grow: 1;
+ padding: 2rem var(--padding);
+ align-items: end;
+ justify-content: space-between;
+}
+
+.content-texts{
+  position: relative;
+  bottom: 70px;
+  
+}
+pre{
+  text-align: left;
+  font-size: 2rem;
+  margin: 1.7rem 0;
+}
+h3{  text-align: left;
+
+  font-size: 1.5rem;
+margin-bottom: 3.5rem;
+
+}
+h4{  text-align: left;
+  
+  font-size: 1.25rem;
+  letter-spacing: 0.12rem;
+  color: var(--primarycolor);
+}
+.social{
+  margin-top: 3.5rem;
+}
+.social img{
+  margin-right: 2rem;
+  width: 2.5rem;
+}
+.social img:hover{
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+.home .container-images{
+  width: 120%;
+  height: 100%;
+  position: relative;
+  align-self: flex-end;
+
+}
+.home .container-images img{
+  position: absolute;
+  bottom: 28rem;
+height: 100%;
+left: 56%;
+transform: translateX(-50%);
+transition: bottom 1s ,left 1s ;
+}
+.home .container-images:hover .shape{
+  bottom: 40px;
+}
+.home .container-images:hover .pic{
+  left: 45%;
+
+}
+.about{
+  background-image: url(mm/Gg.png);
+  background-size: cover;
+  background-color: var(--bgcolor-3);
+  padding:2rem var(--padding);
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100vh;
+  text-align: left;
+}
+
+.about.container-texts{
+width: 35%;
+}
+.about pre{
+ color: darkred;
+}
